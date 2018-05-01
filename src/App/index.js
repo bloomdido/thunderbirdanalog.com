@@ -1,10 +1,13 @@
 import * as React from 'react'
+import {
+  Box,
+} from 'bundles/ui/core'
 
 const App = () => {
   return (
-    <div>
+    <Box backgroundColor="pink">
       Welcome to Thunderbird Analog Recording Studios!
-    </div>
+    </Box>
   )
 }
 

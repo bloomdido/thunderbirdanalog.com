@@ -23,6 +23,12 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: {
+      'src': path.resolve(__dirname, 'src'),
+      'bundles': path.resolve(__dirname, 'src', 'bundles'),
+    },
+  },
   devtool: "eval-source-map",
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),

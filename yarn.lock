@@ -3680,9 +3680,9 @@ react-dom@^16.2.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-jss@^8.3.3:
-  version "8.3.5"
-  resolved "https://registry.yarnpkg.com/react-jss/-/react-jss-8.3.5.tgz#963ed6677e8112820d0495853cd4c3d0fb1d05fd"
+react-jss@^8.4.0:
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/react-jss/-/react-jss-8.4.0.tgz#7cb43d85dea56afafc8f0fd072ae27fcc0518950"
   dependencies:
     hoist-non-react-statics "^2.3.1"
     jss "^9.7.0"
