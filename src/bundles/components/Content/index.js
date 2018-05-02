@@ -1,14 +1,17 @@
 import * as React from 'react'
-import BkgImage from './BkgImage'
 import {
   Box,
 } from 'bundles/ui/core'
+import BkgImage from './BkgImage'
+import Menubar from './Menubar'
 
 const Content = () => {
   return (
     <Box position='relative'>
       <BkgImage/>
-      <Box position='absolute' top={0}>Welcome to Thunderbird Analog Recording Studios!</Box>
+      <Box position='absolute' top={0} paddingTop={100}>
+        <Menubar/>
+      </Box>
     </Box>
   )
 }
