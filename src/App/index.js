@@ -21,6 +21,7 @@ const styles = {
       backgroundColor: '#333333',
       fontFamily: '"Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif',
       fontSize: 15,
+      color: '#ffffff'
     },
     p: {
       margin: 0,
