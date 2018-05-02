@@ -7,6 +7,8 @@
   "author": "Chris Anthes <canthes@bloomdido.com>",
   "license": "MIT",
   "dependencies": {
+    "jss": "^9.8.1",
+    "jss-preset-default": "^4.3.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-jss": "^8.4.0",
