@@ -1,6 +1,7 @@
 import * as React from 'react'
 import injectSheet from 'react-jss'
 import {
+  flexboxStyles,
   textStyles,
   transformStyles,
   transitionStyles,
@@ -24,8 +25,12 @@ const styles = {
   root: {
     ...universalStyles,
     ...textStyles,
+    ...flexboxStyles,
     ...transformStyles,
     ...transitionStyles,
+
+    // overrides
+    margin: props => props.margin || 0,
   }
 }
 

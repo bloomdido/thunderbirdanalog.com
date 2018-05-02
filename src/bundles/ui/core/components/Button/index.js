@@ -1,6 +1,8 @@
 import * as React from 'react'
 import injectSheet from 'react-jss'
 import {
+  flexboxStyles,
+  gridStyles,
   textStyles,
   transformStyles,
   transitionStyles,
@@ -85,6 +87,8 @@ const styles = {
   root: {
     ...universalStyles,
     ...textStyles,
+    ...flexboxStyles,
+    ...gridStyles,
     ...transformStyles,
     ...transitionStyles,
   },
