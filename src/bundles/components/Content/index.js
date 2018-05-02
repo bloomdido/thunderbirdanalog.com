@@ -4,7 +4,7 @@ import {
 } from 'bundles/ui/core'
 import BkgImage from './BkgImage'
 import Menubar from './Menubar'
-import Body from './Body'
+import About from './About'
 
 const Content = () => {
   return (
@@ -15,7 +15,7 @@ const Content = () => {
           <Menubar/>
         </Box>
         <Box paddingTop={50} maxWidth='1200px' marginLeft='auto' marginRight='auto'>
-          <Body/>
+          <About/>
         </Box>
       </Box>
     </Box>

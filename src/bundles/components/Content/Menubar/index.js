@@ -6,9 +6,7 @@ import Logo from './Logo'
 
 const Menubar = () => {
   return (
-    <Box
-      backgroundColor='rgba(210,180,140,.5)'
-    >
+    <Box backgroundColor='rgba(210,180,140,.5)'>
       <Logo/>
     </Box>
   )

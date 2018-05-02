@@ -4,7 +4,7 @@ import {
   Text,
 } from 'bundles/ui/core'
 
-const Body = () => {
+const About = () => {
   return (
      <Box display='flex' backgroundColor="rgba(210,180,140,.5)">
       <Box padding={40}>
@@ -23,4 +23,4 @@ const Body = () => {
   )
 }
 
-export default Body
+export default About
