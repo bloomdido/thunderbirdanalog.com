@@ -8,7 +8,6 @@ const Body = () => {
      <Box
       backgroundColor="rgba(210,180,140,.5)"
       height={500}
-      
     >
       BODY
     </Box>

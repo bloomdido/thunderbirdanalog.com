@@ -10,11 +10,11 @@ const Content = () => {
   return (
     <Box position='relative'>
       <BkgImage/>
-      <Box position='absolute' top={0}>
-        <Box paddingTop={100}>
+      <Box position='absolute' top={0} width='100%'>
+        <Box paddingTop={100} width='100%' marginLeft='auto' marginRight='auto'>
           <Menubar/>
         </Box>
-        <Box paddingTop={50}>
+        <Box paddingTop={50} maxWidth='1200px' marginLeft='auto' marginRight='auto'>
           <Body/>
         </Box>
       </Box>
