@@ -5,7 +5,7 @@ import {
 
 const Content = () => {
   return (
-    <Box>
+    <Box backgroundColor="pink">
       Welcome to Thunderbird Analog Recording Studios!
     </Box>
   )
