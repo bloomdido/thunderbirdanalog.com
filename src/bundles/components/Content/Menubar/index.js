@@ -5,7 +5,7 @@ import {
 
 const Menubar = () => {
   return (
-    <Box>test menu</Box>
+    <Box backgroundColor='rgba(210,180,140,.5)'>test menu</Box>
   )
 }
 
