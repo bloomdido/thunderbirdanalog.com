@@ -1,10 +1,13 @@
 import * as React from 'react'
+import {BrowserRouter} from 'react-router-dom'
 import injectSheet from 'react-jss'
 import Content from 'bundles/components/Content'
 
 const App = () => {
   return (
-    <Content/>
+    <BrowserRouter>
+      <Content/>
+    </BrowserRouter>
   )
 }
 
