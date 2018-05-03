@@ -14,7 +14,7 @@ const Content = () => {
         <Box paddingTop={100} width='100%' marginLeft='auto' marginRight='auto'>
           <Menubar/>
         </Box>
-        <Box paddingTop={50} maxWidth='1200px' marginLeft='auto' marginRight='auto'>
+        <Box paddingTop={75} maxWidth='1200px' marginLeft='auto' marginRight='auto'>
           <About/>
         </Box>
       </Box>
