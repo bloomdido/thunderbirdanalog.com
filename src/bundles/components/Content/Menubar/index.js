@@ -7,13 +7,17 @@ import MenubarButton from './MenubarButton'
 
 const Menubar = () => {
   return (
-    <Box backgroundColor='rgba(199,204,178,.6)' position='relative' height={47} paddingLeft={50}>
+    <Box backgroundColor='rgba(199,204,178,.6)' position='relative' height={47} paddingLeft={50} paddingRight={50}>
       <Box position='absolute' top={-17}>
         <Logo/>
       </Box>
-      <MenubarButton label='GEAR'/>
-      <MenubarButton label='LOUNGE'/>
-      <MenubarButton label='STUDIO'/>
+      <Box float='right' display='flex'>
+        <MenubarButton label='GEAR'/>
+        <Box paddingLeft={100} paddingRight={100}>
+          <MenubarButton label='LOUNGE'/>
+        </Box>
+        <MenubarButton label='STUDIO'/>
+      </Box>
     </Box>
   )
 }

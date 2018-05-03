@@ -11,7 +11,7 @@ const Content = () => {
     <Box position='relative'>
       <BkgImage/>
       <Box position='absolute' top={0} width='100%' height='100%' backgroundColor='rgba(0,0,0,0.4)'>
-        <Box paddingTop={100} width='100%' marginLeft='auto' marginRight='auto'>
+        <Box paddingTop={50} width='100%' marginLeft='auto' marginRight='auto'>
           <Menubar/>
         </Box>
         <Box paddingTop={75} maxWidth='1200px' marginLeft='auto' marginRight='auto'>

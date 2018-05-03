@@ -6,12 +6,12 @@ import {
 const MenubarButton = ({label}) => {
   return (
     <Button
-      float='right'
       backgroundColor='transparent'
       marginTop={12}
       border='none'
       fontSize={18}
       color='white'
+      padding={0}
     >
       {label}
     </Button>
