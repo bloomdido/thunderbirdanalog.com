@@ -3,6 +3,7 @@ import {
   Box,
 } from 'bundles/ui/core'
 import Logo from './Logo'
+import MenubarButton from './MenubarButton'
 
 const Menubar = () => {
   return (
@@ -10,6 +11,9 @@ const Menubar = () => {
       <Box position='absolute' top={-17}>
         <Logo/>
       </Box>
+      <MenubarButton label='GEAR'/>
+      <MenubarButton label='LOUNGE'/>
+      <MenubarButton label='STUDIO'/>
     </Box>
   )
 }
