@@ -1,14 +1,33 @@
 import * as React from 'react'
 import injectSheet from 'react-jss'
-import {Link} from 'react-router-dom'
+import {Link, matchPath, withRouter} from 'react-router-dom'
 import {
   Box,
   Text,
 } from 'bundles/ui/core'
 import Logo from './Logo'
-import MenubarButton from './MenubarButton'
 
-const Menubar = ({classes}) => {
+const Menubar = ({classes, location}) => {
+  const links = [
+    {path: '/gear', name: 'GEAR'},
+    {path: '/lounge', name: 'LOUNGE'},
+    {path: '/studio', name: 'STUDIO'},
+   ]
+
+  const linkComponents = links.map((l) => {
+    const linkClasses = [classes.link]
+    const matchedPath = matchPath(location.pathname, {path: l.path})
+    if (matchedPath) {
+      linkClasses.push(classes.selected)
+    }
+
+    return (
+      <Link className={linkClasses.join(" ")} to={l.path}>{l.name}</Link>
+    )
+  })
+
+  const combinedClasses = [classes.link]
+
   return (
     <Box
       display="flex"
@@ -37,9 +56,7 @@ const Menubar = ({classes}) => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Link className={classes.link} to="/gear">GEAR</Link>
-        <Link className={classes.link} to="/lounge">LOUNGE</Link>
-        <Link className={classes.link} to="/studio">STUDIO</Link>
+        {linkComponents}
       </Box>
     </Box>
   )
@@ -51,8 +68,11 @@ const styles = {
     color: 'white',
     fontSize: 18,
     textDecoration: 'none',
-    // textAlign: 'right',
+  },
+  selected: {
+    paddingBottom: 2,
+    borderBottom: [1, 'solid', 'white'],
   },
 }
 
-export default injectSheet(styles)(Menubar)
+export default injectSheet(styles)(withRouter(Menubar))
