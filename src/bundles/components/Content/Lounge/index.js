@@ -12,69 +12,50 @@ import image5 from 'src/images/20171024_200447.jpg'
 import image6 from 'src/images/20171024_200539.jpg'
 
 const Lounge = () => {
+  const maxColumns = 3
+  const maxRows = 2
+  const columns = Array.from({length: 3}, (x, i) => i + 1)
+  const rows = Array.from({length: 2}, (x, i) => i + 1)
+
+  let currentPicture = 0
+  const allPictures = [
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+  ]
+
+  const gridItems = []
+  rows.forEach((row) => {
+    columns.forEach((column) => {
+      gridItems.push(
+        <Box
+          backgroundColor='white'
+          gridColumnStart={column}
+          gridColumnEnd={column + 1}
+          gridRowStart={row}
+          gridRowEnd={row + 1}
+        >
+          <ImagePreview image={allPictures[currentPicture]}/>
+        </Box>
+      )
+
+      currentPicture += 1
+    })
+  })
+
   return (
     <Box
       display='grid'
-      gridTemplateColumns='repeat(3, 390px)'
+      gridTemplateColumns={`repeat(${maxColumns}, 390px)`}
       gridColumnGap='15px'
-      gridTemplateRows='repeat(2, 219px)'
+      gridTemplateRows={`repeat(${maxRows}, 219px)`}
       gridRowGap='15px'
       backgroundColor='rgba(199,204,178,.6)'
       >
-        <Box
-          backgroundColor='white'
-          gridColumnStart={1}
-          gridColumnEnd={2}
-          gridRowStart={1}
-          gridRowEnd={2}
-        >
-          <ImagePreview image={image1}/>
-        </Box>
-        <Box
-          backgroundColor='white'
-          gridColumnStart={2}
-          gridColumnEnd={3}
-          gridRowStart={1}
-          gridRowEnd={2}
-        >
-          <ImagePreview image={image2}/>
-        </Box>
-        <Box
-          backgroundColor='white'
-          gridColumnStart={3}
-          gridColumnEnd={4}
-          gridRowStart={1}
-          gridRowEnd={2}
-        >
-          <ImagePreview image={image3}/>
-        </Box>
-        <Box
-          backgroundColor='white'
-          gridColumnStart={1}
-          gridColumnEnd={2}
-          gridRowStart={2}
-          gridRowEnd={2}
-        >
-          <ImagePreview image={image4}/>
-        </Box>
-        <Box
-          backgroundColor='white'
-          gridColumnStart={2}
-          gridColumnEnd={3}
-          gridRowStart={2}
-          gridRowEnd={2}
-        >
-          <ImagePreview image={image5}/>
-        </Box>
-        <Box
-          backgroundColor='white'
-          gridColumnStart={3}
-          gridColumnEnd={4}
-          gridRowStart={2}
-          gridRowEnd={2}
-        >
-          <ImagePreview image={image6}/>
-        </Box>
+        {gridItems}
     </Box>
   )
 }
