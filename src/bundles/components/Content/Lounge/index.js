@@ -32,7 +32,6 @@ const Lounge = () => {
     columns.forEach((column) => {
       gridItems.push(
         <Box
-          backgroundColor='white'
           gridColumnStart={column}
           gridColumnEnd={column + 1}
           gridRowStart={row}
@@ -53,7 +52,6 @@ const Lounge = () => {
       gridColumnGap='15px'
       gridTemplateRows={`repeat(${maxRows}, 219px)`}
       gridRowGap='15px'
-      backgroundColor='rgba(199,204,178,.6)'
       >
         {gridItems}
     </Box>
