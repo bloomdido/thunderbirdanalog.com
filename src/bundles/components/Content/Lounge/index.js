@@ -14,8 +14,6 @@ import image6 from 'src/images/20171024_200539.jpg'
 const Lounge = () => {
   const maxColumns = 3
   const maxRows = 2
-  const columns = Array.from({length: 3}, (x, i) => i + 1)
-  const rows = Array.from({length: 2}, (x, i) => i + 1)
 
   let currentPicture = 0
   const allPictures = [
@@ -28,20 +26,12 @@ const Lounge = () => {
   ]
 
   const gridItems = []
-  rows.forEach((row) => {
-    columns.forEach((column) => {
+  allPictures.forEach((i) => {
       gridItems.push(
-        <Box
-          gridColumnStart={column}
-          gridColumnEnd={column + 1}
-          gridRowStart={row}
-          gridRowEnd={row + 1}
-        >
-          <ImagePreview image={allPictures[currentPicture]}/>
+        <Box>
+          <ImagePreview image={allPictures[i]}/>
         </Box>
       )
-
-      currentPicture += 1
     })
   })
 
