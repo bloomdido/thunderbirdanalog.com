@@ -55,6 +55,7 @@ const Menubar = ({classes, location}) => {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
+        maxWidth={350}
       >
         {linkComponents}
       </Box>
