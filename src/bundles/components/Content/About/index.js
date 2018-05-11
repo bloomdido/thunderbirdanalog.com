@@ -1,12 +1,9 @@
 import * as React from 'react'
-import Responsive from 'react-responsive'
+import MediaQuery from 'react-responsive'
 import {
   Box,
   Text,
 } from 'bundles/ui/core'
-
-const AboutDesktop = props => <Responsive {...props} minWidth={768} />
-const AboutMobile = props => <Responsive {...props} maxWidth={767} />
 
 const analogH1 = 'Thunderbird Analog'
 
@@ -21,30 +18,29 @@ const vintageText = 'In addition to a plethora of vintage gear, Thunderbird also
 const About = () => {
   return (
     <Box>
-    <AboutDesktop>
-      <Box display='flex' backgroundColor='rgba(199,204,178,.6)'>
-        <Box padding={40} width='50%'>
-          <Text component='h1' paddingBottom={30}>{analogH1}</Text>
-          <Text paddingBottom={20}>{analogText1}</Text>
-          <Text paddingBottom={20}>{analogText2}</Text>
+      <MediaQuery key="desktop" minWidth="768px">
+        <Box display='flex' backgroundColor='rgba(199,204,178,.6)'>
+          <Box padding={40} width='50%'>
+            <Text component='h1' paddingBottom={30}>{analogH1}</Text>
+            <Text paddingBottom={20}>{analogText1}</Text>
+            <Text paddingBottom={20}>{analogText2}</Text>
+          </Box>
+          <Box padding={40} width='50%'>
+            <Text component='h1' paddingBottom={30}>{vintageH1}</Text>
+            <Text>{vintageText}</Text>
+          </Box>
         </Box>
-        <Box padding={40} width='50%'>
-          <Text component='h1' paddingBottom={30}>{vintageH1}</Text>
-          <Text>{vintageText}</Text>
-        </Box>
-     </Box>
-    </AboutDesktop>
-    <AboutMobile>
-       <Box display='flex' backgroundColor='rgba(199,204,178,.6)'>
+      </MediaQuery>
+      <MediaQuery key="mobile" maxWidth="767px">
+        <Box display='flex' backgroundColor='rgba(199,204,178,.6)'>
          <Box padding={40} width='100%'>
            <Text component='h1' paddingBottom={30}>{analogH1}</Text>
            <Text paddingBottom={20}>{analogText1}</Text>
-           <Text paddingBottom={20}>{analogText2}</Text>
            <Text component='h1' paddingBottom={30}>{vintageH1}</Text>
            <Text>{vintageText}</Text>
          </Box>
-      </Box>
-    </AboutMobile>
+        </Box>
+      </MediaQuery>
     </Box>
   )
 }
