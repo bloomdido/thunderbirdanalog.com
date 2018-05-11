@@ -18,7 +18,7 @@ const vintageText = 'In addition to a plethora of vintage gear, Thunderbird also
 const About = () => {
   return (
     <Box>
-      <MediaQuery key="desktop" minWidth="768px">
+      <MediaQuery key="desktop" minWidth="1225px">
         <Box display='flex' backgroundColor='rgba(199,204,178,.6)'>
           <Box padding={40} width='50%'>
             <Text component='h1' paddingBottom={30}>{analogH1}</Text>
@@ -31,7 +31,7 @@ const About = () => {
           </Box>
         </Box>
       </MediaQuery>
-      <MediaQuery key="mobile" maxWidth="767px">
+      <MediaQuery key="mobile" maxWidth="1224px">
         <Box display='flex' backgroundColor='rgba(199,204,178,.6)'>
          <Box padding={40} width='100%'>
            <Text component='h1' paddingBottom={30}>{analogH1}</Text>
