@@ -1,6 +1,10 @@
 import * as React from 'react'
 import injectSheet from 'react-jss'
 import {Link, matchPath, withRouter} from 'react-router-dom'
+import MediaQuery from 'react-responsive'
+
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import {faBars} from '@fortawesome/fontawesome-free-solid'
 import {
   Box,
   Text,
@@ -29,36 +33,72 @@ const Menubar = ({classes, location}) => {
   const combinedClasses = [classes.link]
 
   return (
-    <Box
-      display="flex"
-      justifyContent="space-between"
-      backgroundColor="rgba(199,204,178,.6)"
-      position="relative"
-      height={47}
-      paddingLeft={50}
-      paddingRight={50}
-    >
-      <Box
-        marginTop={-17}
-        flexGrow={1}
-        flexShrink={0}
-      >
-        <Logo/>
-      </Box>
-      <Box
-        flexGrow={2}
-        flexShrink={1}
-      />
-      <Box
-        flexGrow={1}
-        flexShrink={0}
-        display="flex"
-        justifyContent="space-between"
-        alignItems="center"
-        maxWidth={350}
-      >
-        {linkComponents}
-      </Box>
+    <Box>
+      <MediaQuery key="desktop" minWidth="1225px">
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          backgroundColor="rgba(199,204,178,.6)"
+          position="relative"
+          height={47}
+          paddingLeft={50}
+          paddingRight={50}
+        >
+          <Box
+            marginTop={-17}
+            flexGrow={1}
+            flexShrink={0}
+          >
+            <Logo/>
+          </Box>
+          <Box
+            flexGrow={2}
+            flexShrink={1}
+          />
+          <Box
+            flexGrow={1}
+            flexShrink={0}
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+            maxWidth={350}
+          >
+            {linkComponents}
+          </Box>
+        </Box>
+      </MediaQuery>
+      <MediaQuery key="mobile" maxWidth="1224px">
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          backgroundColor="rgba(199,0,0,.6)"
+          position="relative"
+          height={47}
+          paddingLeft={50}
+          paddingRight={50}
+        >
+          <Box
+            marginTop={-17}
+            flexGrow={1}
+            flexShrink={0}
+          >
+            <Logo/>
+          </Box>
+          <Box
+            flexGrow={2}
+            flexShrink={1}
+          />
+          <Box
+            flexGrow={0}
+            flexShrink={0}
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <FontAwesomeIcon icon={faBars} size="2x"/>
+          </Box>
+        </Box>
+      </MediaQuery>
     </Box>
   )
 }
