@@ -1,10 +1,10 @@
 import * as React from 'react'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import {faBars} from '@fortawesome/fontawesome-free-solid'
 import Logo from './Logo'
 import {
   Box,
+  Button,
 } from 'bundles/ui/core'
+import HamburgerMenu from './hamburgerMenu'
 
 const Mobile = ({linkComponents}) => {
   return (
@@ -35,7 +35,7 @@ const Mobile = ({linkComponents}) => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <FontAwesomeIcon icon={faBars} size="2x"/>
+        <HamburgerMenu/>
       </Box>
     </Box>
   )
