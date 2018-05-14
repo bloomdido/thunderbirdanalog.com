@@ -39,36 +39,7 @@ const Menubar = ({classes, location}) => {
         <Desktop linkComponents={linkComponents}/>
       </MediaQuery>
       <MediaQuery key="mobile" maxWidth="1224px">
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          backgroundColor="rgba(199,0,0,.6)"
-          position="relative"
-          height={47}
-          paddingLeft={50}
-          paddingRight={50}
-        >
-          <Box
-            marginTop={-17}
-            flexGrow={1}
-            flexShrink={0}
-          >
-            <Logo/>
-          </Box>
-          <Box
-            flexGrow={2}
-            flexShrink={1}
-          />
-          <Box
-            flexGrow={0}
-            flexShrink={0}
-            display="flex"
-            justifyContent="space-between"
-            alignItems="center"
-          >
-            <FontAwesomeIcon icon={faBars} size="2x"/>
-          </Box>
-        </Box>
+        <Mobile linkComponents={linkComponents}/>
       </MediaQuery>
     </Box>
   )

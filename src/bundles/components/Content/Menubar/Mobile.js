@@ -11,7 +11,7 @@ const Mobile = ({linkComponents}) => {
     <Box
       display="flex"
       justifyContent="space-between"
-      backgroundColor="rgba(199,0,0,.6)"
+      backgroundColor="rgba(199,204,178,.6)"
       position="relative"
       height={47}
       paddingLeft={50}
