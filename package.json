@@ -7,6 +7,9 @@
   "author": "Chris Anthes <canthes@bloomdido.com>",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/react-fontawesome": "^0.0.19",
     "jss": "^9.8.1",
     "jss-preset-default": "^4.3.0",
     "react": "^16.2.0",
