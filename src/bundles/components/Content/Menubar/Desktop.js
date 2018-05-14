@@ -19,12 +19,14 @@ const Desktop = ({linkComponents}) => {
         marginTop={-17}
         flexGrow={1}
         flexShrink={0}
+        key={1}
       >
         <Logo/>
       </Box>
       <Box
         flexGrow={2}
         flexShrink={1}
+        key={2}
       />
       <Box
         flexGrow={1}
@@ -33,6 +35,7 @@ const Desktop = ({linkComponents}) => {
         justifyContent="space-between"
         alignItems="center"
         maxWidth={350}
+        key={3}
       >
         {linkComponents}
       </Box>

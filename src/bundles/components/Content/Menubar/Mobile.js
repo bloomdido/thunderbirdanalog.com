@@ -4,7 +4,7 @@ import {
   Box,
   Button,
 } from 'bundles/ui/core'
-import HamburgerMenu from './hamburgerMenu'
+import HamburgerMenu from './HamburgerMenu'
 
 const Mobile = ({linkComponents}) => {
   return (
