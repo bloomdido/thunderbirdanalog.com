@@ -16,7 +16,9 @@ class HamburgerMenu extends React.PureComponent {
       <Button
         onClick={this.handleClick}
         backgroundColor="transparent"
+        color="white"
         border="none"
+        focusOutline="none"
       >
         <FontAwesomeIcon icon={faBars} size="4x"/>
       </Button>
