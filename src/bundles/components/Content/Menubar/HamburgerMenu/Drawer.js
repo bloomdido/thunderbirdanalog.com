@@ -5,7 +5,9 @@ import {
 }
 from 'bundles/ui/core'
 
-const Drawer = () => {
+const Drawer = ({onClick, showDrawer}) => {
+  if (!showDrawer) return null
+
   return (
     <Box
       width="80%"
@@ -21,6 +23,7 @@ const Drawer = () => {
         paddingTop={30}
         paddingLeft={30}
         color="black"
+        onClick={onClick}
       >
         menu item 1
       </Text>

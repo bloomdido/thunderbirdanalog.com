@@ -5,15 +5,29 @@ import MenuButton from './MenuButton'
 import Drawer from './Drawer'
 
 class HamburgerMenu extends React.PureComponent {
-  handleClick = () => {
-    console.log('closing')
+  componentWillMount() {
+    this.setState({
+      showDrawer: false,
+    })
+  }
+
+  handleOpen = () => {
+    this.setState({
+      showDrawer: true,
+    })
+  }
+
+  handleClose = () => {
+    this.setState({
+      showDrawer: false,
+    })
   }
 
   render () {
     return (
       <Box>
-        <MenuButton onClick={this.handleClick}/>
-        <Drawer/>
+        <MenuButton onClick={this.handleOpen}/>
+        <Drawer onClick={this.handleClose} showDrawer={this.state.showDrawer}/>
       </Box>
     )
   }
