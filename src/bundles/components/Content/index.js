@@ -3,7 +3,7 @@ import {Switch, Route} from 'react-router-dom'
 import {
   Box,
   Text,
-} from 'bundles/ui/core'
+} from 'react-idic'
 import BkgImage from './BkgImage'
 import Menubar from './Menubar'
 import About from './About'

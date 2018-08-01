@@ -4,7 +4,7 @@ import {faBars} from '@fortawesome/fontawesome-free-solid'
 import {
   Button,
 }
-from 'bundles/ui/core'
+from 'react-idic'
 
 const MenuButton = ({onClick}) => {
   return (

@@ -3,7 +3,7 @@ import MediaQuery from 'react-responsive'
 import {
   Box,
   Text,
-} from 'bundles/ui/core'
+} from 'react-idic'
 
 const analogH1 = 'Thunderbird Analog'
 

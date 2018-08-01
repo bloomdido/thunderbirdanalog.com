@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {Transition} from 'react-transition-group'
-import {Box} from 'bundles/ui/core'
+import {Box} from 'react-idic'
 import MenuButton from './MenuButton'
 import Drawer from './Drawer'
 

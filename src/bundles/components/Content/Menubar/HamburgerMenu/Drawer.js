@@ -3,7 +3,7 @@ import {
   Box,
   Text,
 }
-from 'bundles/ui/core'
+from 'react-idic'
 
 const Drawer = ({onClick, showDrawer}) => {
   if (!showDrawer) return null

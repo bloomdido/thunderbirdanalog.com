@@ -7,7 +7,7 @@ import {faBars} from '@fortawesome/fontawesome-free-solid'
 import {
   Box,
   Text,
-} from 'bundles/ui/core'
+} from 'react-idic'
 import Logo from './Logo'
 import Desktop from './Desktop'
 import Mobile from './Mobile'

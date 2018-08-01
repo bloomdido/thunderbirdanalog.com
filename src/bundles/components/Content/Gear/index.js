@@ -2,7 +2,7 @@ import * as React from 'react'
 import {
   Box,
   Text,
-} from 'bundles/ui/core'
+} from 'react-idic'
 
 const Gear = () => {
   return (

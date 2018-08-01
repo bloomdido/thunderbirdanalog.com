@@ -3,7 +3,7 @@ import Logo from './Logo'
 import {
   Box,
   Button,
-} from 'bundles/ui/core'
+} from 'react-idic'
 import HamburgerMenu from './HamburgerMenu'
 
 const Mobile = ({linkComponents}) => {

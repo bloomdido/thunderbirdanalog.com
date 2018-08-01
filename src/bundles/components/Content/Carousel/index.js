@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {
   Box,
-} from 'bundles/ui/core'
+} from 'react-idic'
 import ImagePreview from 'bundles/components/Content/ImagePreview'
 
 const Carousel = ({allPictures, maxRows, maxColumns}) => {
