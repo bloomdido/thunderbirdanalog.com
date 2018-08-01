@@ -27,7 +27,7 @@ const Menubar = ({classes, location}) => {
     }
 
     return (
-      <Link className={linkClasses.join(" ")} to={l.path}>{l.name}</Link>
+      <Link key={l.path} className={linkClasses.join(" ")} to={l.path}>{l.name}</Link>
     )
   })
 

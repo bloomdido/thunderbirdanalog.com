@@ -9,7 +9,7 @@ const Carousel = ({allPictures, maxRows, maxColumns}) => {
 
   allPictures.forEach((image) => {
     gridItems.push(
-      <Box>
+      <Box key={image}>
         <ImagePreview image={image}/>
       </Box>
     )
@@ -19,9 +19,9 @@ const Carousel = ({allPictures, maxRows, maxColumns}) => {
     <Box
       display='grid'
       gridTemplateColumns={`repeat(${maxColumns}, 390px)`}
-      gridColumnGap='15px'
+      columnGap='15px'
       gridTemplateRows={`repeat(${maxRows}, 219px)`}
-      gridRowGap='15px'
+      rowGap='15px'
       >
         {gridItems}
     </Box>
