@@ -3569,6 +3569,10 @@ react-dom@^16.2.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
+react-idic@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-idic/-/react-idic-0.1.1.tgz#8195ac259875b0282a6e57a8aaa1500f464153ac"
+
 react-jss@^8.4.0:
   version "8.6.1"
   resolved "https://registry.yarnpkg.com/react-jss/-/react-jss-8.6.1.tgz#a06e2e1d2c4d91b4d11befda865e6c07fbd75252"
